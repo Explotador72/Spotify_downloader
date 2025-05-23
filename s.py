@@ -41,6 +41,7 @@ async def upload_file(file_path):
     async def start_ngrok():
         if IS_RENDER:
             result['public_url'] = os.getenv("RENDER_EXTERNAL_URL", "http://localhost:5000")
+            print(result['public_url'])
         else:
             ngrok_process = subprocess.Popen(["ngrok", "http", str(port)],
                                              stdout=subprocess.PIPE,
