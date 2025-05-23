@@ -67,7 +67,7 @@ async def upload_file(file_path):
 
 async def set_up():
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(BASE_DIR, "archivo.mp3")
+    file_path = os.path.join(BASE_DIR, "s.py")
     await upload_file(file_path)
 
 asyncio.run(set_up())
