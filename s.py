@@ -165,7 +165,7 @@ async def upload_file(file_path):
 
 
 async def set_up():
-    url = input('Url')
+    url = 'https://open.spotify.com/playlist/63wU9EHeOgzhEB5XICOuA3'
     zip_file = get_playlist(url)
     await upload_file(zip_file)
 
