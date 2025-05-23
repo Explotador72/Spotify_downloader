@@ -1,9 +1,6 @@
-import os, time, glob, shutil, spotipy, requests, threading, subprocess, zipfile, signal, asyncio
+import os, spotipy, requests, threading, subprocess, asyncio
 from flask import Flask, send_file, make_response, request
 from spotipy.oauth2 import SpotifyOAuth
-from concurrent.futures import ThreadPoolExecutor
-from yt_dlp import YoutubeDL
-from urllib.parse import quote
 from dotenv import load_dotenv
 
 load_dotenv()
