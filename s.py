@@ -65,6 +65,8 @@ async def upload_file(file_path):
 
 
 async def set_up():
-    await upload_file('E:\Documentos\Code\BasicsFunctions\MusicDownloader\s.py')
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(BASE_DIR, "archivo.mp3")
+    await upload_file(file_path)
 
 asyncio.run(set_up())
