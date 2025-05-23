@@ -1,4 +1,5 @@
 Flask
 spotipy
 requests
+yt-dlp
 python-dotenv
