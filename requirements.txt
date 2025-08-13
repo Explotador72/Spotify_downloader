@@ -1,5 +1,3 @@
-Flask
-spotipy
-requests
-yt-dlp
-python-dotenv
+spotipy>=2.22.1
+yt-dlp>=2023.7.6
+python-dotenv>=1.0.0
